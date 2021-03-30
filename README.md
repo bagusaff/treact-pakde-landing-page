@@ -11,11 +11,13 @@ Created using react
 ## Home Page
 [x] Navbar 29-03-2021
 
+[x] Sidebar 30-03-2021
+
 [x] Hero Section 29-03-2021
 
 [x] About Section 29-03-2021
 
-[ ] Forum Section
+[x] Forum Section 30-03-2021
 
 [ ] Activity Section
 
@@ -30,3 +32,8 @@ TBA
 TBA
 ## Others
 TBA
+
+## Notes
+[ ] fix background bug
+
+[ ] change avatar

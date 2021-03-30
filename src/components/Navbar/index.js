@@ -2,12 +2,12 @@ import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import { MobileIcon, Nav, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavMenu } from './NavbarElement'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
         <Nav>
             <NavbarContainer>
-                <MobileIcon>
+                <MobileIcon onClick={toggle}>
                     <FaBars fill='#fff'/>
                 </MobileIcon>
                 <NavMenu>
