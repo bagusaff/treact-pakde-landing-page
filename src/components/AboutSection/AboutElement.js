@@ -2,13 +2,15 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 export const AboutContainer = styled.div`
-    height:100vh;
+    height:800px;
     width:100%;
     background-image:url(${({bg})=> bg});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position:relative;
+    /* @media screen and (max-width:768px){
+        margin-bottom:50px;
+    } */
 `
 
 export const Wrapper = styled.div`
@@ -61,6 +63,13 @@ export const Left = styled.div`
             padding-top:5px;
             font-size:0.7rem;
         }
+    }
+`
+
+export const InnerWrapper = styled.div`
+    display:flex;
+    @media screen and (max-width:768px){
+        justify-content:center;
     }
 `
 

@@ -7,12 +7,16 @@ export const CardContainer = styled.div`
     background-color:#fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    @media screen and (max-width:768px){
+        width:100%;
+    }
 `
 
 export const Wrapper = styled.div`
     display:flex;
     flex-direction:column;
     padding:10px 22px;
+    
 `
 
 export const Header = styled.div`
@@ -94,6 +98,7 @@ export const Button = styled(Link)`
     padding:7px 0px;
     margin:10px 0;
     outline:none;
+    font-size:0.8rem;
     width:80%;
     text-align:center;
     border:none;

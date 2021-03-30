@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 export const HeroContainer = styled.div`
-    height:100vh;
+    height:800px;
     width:100%;
     background-image:url(${({bg})=> bg});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position:relative;
+    /* @media screen and (max-width:768px){
+        margin-bottom:50px;
+    } */
 `
 
 export const Wrapper = styled.div`
@@ -68,7 +70,7 @@ export const Right = styled.div`
 export const Img = styled.img`
   max-width: 100%;
   height: auto;
-  @media screen and (max-width:768px){
+  @media screen and (max-width:767px){
     max-width:50%;
     margin-left:auto;
     margin-right:auto;

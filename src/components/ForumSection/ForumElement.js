@@ -2,21 +2,31 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 export const ForumContainer = styled.div`
-    height:100vh;
+    height:800px;
     width:100%;
     background-image:url(${({bg})=> bg});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position:relative;
+    @media screen and (max-width:768px){
+        height:1000px;
+    }
+    @media screen and (max-width:436px){
+        height:1100px;
+    }
+    @media screen and (max-width:379px){
+        height:1200px;
+    }
+    @media screen and (max-width:326px){
+        height:1300px;
+    }
 `
 
 export const Wrapper = styled.div`
-    height:100vh;
-    width:100vw;
     max-width:1140px;
     margin:auto;
     padding:1rem;
+    
 `
 
 export const Left = styled.div`

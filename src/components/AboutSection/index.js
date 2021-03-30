@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-grid-system'
-import { AboutContainer, Left, Wrapper,BtnWrapper,NavBtnLink, Right, Img } from './AboutElement'
+import { AboutContainer, Left, Wrapper,BtnWrapper,NavBtnLink, Right, Img, InnerWrapper } from './AboutElement'
 import SocialButton from './SocialButton'
 
 import bg from '../../images/background-about.png'
@@ -28,12 +28,14 @@ const AboutSection = () => {
                                 </Left>
                             </Col>
                             <Col xl={5} md={5} xs={12} sm={12}>
-                                <Right>
-                                    <Img src={img} alt="Pakdhes" />
-                                    <h2>RB Dwi Wahyu Budiantoro</h2>
-                                    <h3>Wakil Ketua Komisi B DPRD Provinsi DIY</h3>
-                                    <h3>Fraksi Partai Demokrasi Indonesia Perjuangan</h3>
-                                </Right>
+                                <InnerWrapper>
+                                    <Right>
+                                        <Img src={img} alt="Pakdhes" />
+                                        <h2>RB Dwi Wahyu Budiantoro</h2>
+                                        <h3>Wakil Ketua Komisi B DPRD Provinsi DIY</h3>
+                                        <h3>Fraksi Partai Demokrasi Indonesia Perjuangan</h3>
+                                    </Right>
+                                </InnerWrapper>
                             </Col>
                         </Row>
                     </Container>

@@ -25,6 +25,9 @@ Created using react
 
 [x] Footer Section 29-03-2021
 
+[ ] Points Banner
+
+[ ] Carreer Banner
 
 ## Login/Register Page
 TBA
@@ -37,3 +40,8 @@ TBA
 [ ] fix background bug
 
 [ ] change avatar
+
+[ ] 
+
+# 30 - 3 - 2021 
+- change container size from 100vh to 800px
