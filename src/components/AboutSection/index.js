@@ -1,10 +1,11 @@
 import React from 'react'
-import {Container, Row, Col} from 'react-grid-system'
+import {Container, Row, Col, Hidden} from 'react-grid-system'
 import { AboutContainer, Left, Wrapper,BtnWrapper,NavBtnLink, Right, Img, InnerWrapper } from './AboutElement'
 import SocialButton from './SocialButton'
 
 import bg from '../../images/background-about.png'
 import img from '../../images/homepict2.png'
+import BadgeBanner from '../FloatingBanner/BadgeBanner'
 
 const AboutSection = () => {
     return (
@@ -40,6 +41,9 @@ const AboutSection = () => {
                         </Row>
                     </Container>
                 </Wrapper>
+                <Hidden xs sm>
+                    <BadgeBanner />
+                </Hidden>
             </AboutContainer>
         </>
     )

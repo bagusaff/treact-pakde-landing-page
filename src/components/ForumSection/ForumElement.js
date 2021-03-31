@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 
 export const ForumContainer = styled.div`
     height:800px;
@@ -8,6 +7,7 @@ export const ForumContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position:relative;
     @media screen and (max-width:768px){
         height:1000px;
     }
@@ -18,14 +18,17 @@ export const ForumContainer = styled.div`
         height:1200px;
     }
     @media screen and (max-width:326px){
-        height:1300px;
+        height:1400px;
+    }
+    @media screen and (max-width:276px){
+        height:1500px;
     }
 `
 
 export const Wrapper = styled.div`
     max-width:1140px;
     margin:auto;
-    padding:1rem;
+    padding:5rem 1rem;
     
 `
 

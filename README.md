@@ -19,15 +19,17 @@ Created using react
 
 [x] Forum Section 30-03-2021
 
-[ ] Activity Section
+[x] Activity Section 31-03-2021
 
-[ ] Gallery Section
+[x] Gallery Section  31-03-2021
 
 [x] Footer Section 29-03-2021
 
-[ ] Points Banner
+[x] Points Banner  31-03-2021
 
-[ ] Carreer Banner
+[x] Carreer Banner  31-03-2021
+
+[x] Question Banner  31-03-2021
 
 ## Login/Register Page
 TBA
@@ -41,7 +43,7 @@ TBA
 
 [ ] change avatar
 
-[ ] 
+[ ] Carrer Banner & Question Banner use react slik for mobile phone
 
 # 30 - 3 - 2021 
 - change container size from 100vh to 800px

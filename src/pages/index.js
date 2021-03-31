@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import AboutSection from '../components/AboutSection'
+import ActivitySection from '../components/ActivitySection'
 import FooterSection from '../components/FooterSection'
 import ForumSection from '../components/ForumSection'
+import GallerySection from '../components/GallerySection'
 import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -20,6 +22,8 @@ const Home = () => {
             <HeroSection />
             <AboutSection />
             <ForumSection />
+            <ActivitySection />
+            <GallerySection />
             <FooterSection />
         </>
     )

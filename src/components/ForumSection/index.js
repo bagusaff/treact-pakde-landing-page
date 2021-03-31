@@ -1,10 +1,11 @@
 import React from 'react'
 import { ForumContainer,Wrapper,Left,Right } from './ForumElement'
-import {Container, Row, Col} from 'react-grid-system'
+import {Container, Row, Col, Hidden} from 'react-grid-system'
 
 import bg from '../../images/background-forum.png'
 import ForumCardList from './ForumCards/ForumCardList'
 import SiderCard from './SiderCards/SiderCard'
+import ExperienceBanner from '../FloatingBanner/ExperienceBanner'
 
 
 const ForumSection = () => {
@@ -34,6 +35,7 @@ const ForumSection = () => {
                         </Row>
                     </Container>
                 </Wrapper>
+                <Hidden sm xs><ExperienceBanner/></Hidden>
             </ForumContainer>
         </>
     )

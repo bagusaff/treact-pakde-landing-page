@@ -8,6 +8,7 @@ export const AboutContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position:relative;
     /* @media screen and (max-width:768px){
         margin-bottom:50px;
     } */
@@ -128,6 +129,11 @@ export const NavBtnLink = styled(Link)`
     }
     @media screen and (max-width:768px){
         margin-bottom:20px;
+        font-size:0.8rem;
+    }
+    @media screen and (max-width:400px){
+        margin-bottom:20px;
+        font-size:0.7rem;
     }
 `
 
