@@ -8,15 +8,15 @@ import AskBanner from '../FloatingBanner/AskBanner'
 const GallerySection = () => {
     return (
         <>
-            <GalleryContainer>
+            <GalleryContainer id="gallery">
                 <Wrapper>
                     <Container>
                         <Row>
                             <Col>
                                 <InnerWrapper>
                                     <Header>
-                                        <GalleryTitle>Galeri Pakdhe</GalleryTitle>
-                                        <Hidden sm xs><GalleryLink>Lihat semua galeri</GalleryLink></Hidden>
+                                        <GalleryTitle to="/">Galeri Pakdhe</GalleryTitle>
+                                        <Hidden sm xs><GalleryLink to="/">Lihat semua galeri</GalleryLink></Hidden>
                                     </Header>
                                 </InnerWrapper>
                             </Col>

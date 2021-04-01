@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 export const AboutContainer = styled.div`
-    height:800px;
     width:100%;
     background-image:url(${({bg})=> bg});
     background-repeat: no-repeat;
@@ -15,11 +14,9 @@ export const AboutContainer = styled.div`
 `
 
 export const Wrapper = styled.div`
-    height:100vh;
-    width:100vw;
     max-width:1140px;
     margin:auto;
-    padding:1rem;
+    padding:5rem 0rem;
 `
 
 export const Left = styled.div`
@@ -69,6 +66,7 @@ export const Left = styled.div`
 
 export const InnerWrapper = styled.div`
     display:flex;
+    justify-content: flex-end;
     @media screen and (max-width:768px){
         justify-content:center;
     }
@@ -78,7 +76,6 @@ export const Right= styled.div`
     display: flex;
     align-items: center;
     flex-direction:column;
-    justify-content: center;
 
     h2{        
         margin-top:10px;

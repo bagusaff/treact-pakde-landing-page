@@ -18,7 +18,7 @@ const ActivityPost = () => {
                             <PostTitle>Seminar Nasional “Bersama Rakyat, Negara Hebat” oleh Dwi Wahyu di Hotel Tentrem, 10 Maret 2021</PostTitle>
                             <PostDate>Dipublikasikan oleh Admin, 11 Maret 2021</PostDate>
                             <PostBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi aenean sed dictum ut mauris sit purus a. Ultricies nulla blandit nunc tortor quis purus vel. Sed vitae morbi cursus non. Pellentesque varius vulputate amet, at tempus est orci.</PostBody>
-                            <ActivityPostLink>Baca Selengkapnya</ActivityPostLink>
+                            <ActivityPostLink to="/">Baca Selengkapnya</ActivityPostLink>
                         </PostContainer>
                     </Row>
                 </Col>

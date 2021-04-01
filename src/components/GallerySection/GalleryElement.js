@@ -1,13 +1,9 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 export const GalleryContainer = styled.div`
-    height:800px;
     width:100%;
     background-color:#fff;
     position:relative;
-    @media screen and (max-width:768px){
-        height:1000px;
-    }
 `
 
 export const Wrapper = styled.div`
@@ -18,7 +14,6 @@ export const Wrapper = styled.div`
 
 export const InnerWrapper = styled.div`
     display:flex;
-    width:100%;
     align-items:flex-start;
     flex-direction:column;
 `

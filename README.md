@@ -43,7 +43,13 @@ TBA
 
 [ ] change avatar
 
-[ ] Carrer Banner & Question Banner use react slik for mobile phone
+[nope] Carrer Banner & Question Banner use react slik for mobile phone
 
 # 30 - 3 - 2021 
 - change container size from 100vh to 800px
+
+# 1 - 4 - 2021
+- cleaning component styling
+- navbar scoll to section
+- floating button to go to top
+- mobile phone version now more stable

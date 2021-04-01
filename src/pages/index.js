@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import AboutSection from '../components/AboutSection'
 import ActivitySection from '../components/ActivitySection'
+import FloatingButton from '../components/Buttons/FloatingButton'
 import FooterSection from '../components/FooterSection'
 import ForumSection from '../components/ForumSection'
 import GallerySection from '../components/GallerySection'
@@ -25,6 +26,7 @@ const Home = () => {
             <ActivitySection />
             <GallerySection />
             <FooterSection />
+            <FloatingButton />
         </>
     )
 }

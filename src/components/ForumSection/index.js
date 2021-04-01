@@ -11,7 +11,7 @@ import ExperienceBanner from '../FloatingBanner/ExperienceBanner'
 const ForumSection = () => {
     return (
         <>
-            <ForumContainer bg={bg}>
+            <ForumContainer bg={bg} id="forum">
                 <Wrapper>
                     <Container>
                         <Row>

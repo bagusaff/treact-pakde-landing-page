@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 export const HeroContainer = styled.div`
-    height:800px;
     width:100%;
     background-image:url(${({bg})=> bg});
     background-repeat: no-repeat;
@@ -13,11 +12,11 @@ export const HeroContainer = styled.div`
 `
 
 export const Wrapper = styled.div`
-    height:100vh;
-    width:100vw;
     max-width:1140px;
     margin:auto;
     padding:1rem;
+    padding-top:10rem;
+    padding-bottom:5rem;
 `
 
 export const Left = styled.div`

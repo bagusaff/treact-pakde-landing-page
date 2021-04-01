@@ -10,7 +10,7 @@ import BadgeBanner from '../FloatingBanner/BadgeBanner'
 const AboutSection = () => {
     return (
         <>
-            <AboutContainer bg={bg}>
+            <AboutContainer bg={bg} id="about">
                 <Wrapper>
                     <Container>
                         <Row>

@@ -10,11 +10,10 @@ const Sidebar = ({isOpen,toggle}) => {
                </Icon>
                <SidebarWrapper>
                    <SidebarMenu>
-                       <SidebarLink to="/activity" onClick={toggle}>Kegiatan</SidebarLink>
-                       <SidebarLink to="/forum" onClick={toggle}>Forum</SidebarLink>
-                       <SidebarLink to="/article" onClick={toggle}>Artikel</SidebarLink>
-                       <SidebarLink to="/gallery" onClick={toggle}>Galeri</SidebarLink>
-                       <SidebarLink to="/profile" onClick={toggle}>Profile</SidebarLink>
+                       <SidebarLink to="about" smooth={true} duration={500} spy={true} exact='true' offset={-50} onClick={toggle}>Profil</SidebarLink>
+                       <SidebarLink to="forum" smooth={true} duration={500} spy={true} exact='true' onClick={toggle}>Forum</SidebarLink>
+                       <SidebarLink to="activity" smooth={true} duration={500} spy={true} exact='true'  onClick={toggle}>Kegiatan</SidebarLink>
+                       <SidebarLink to="gallery" smooth={true} duration={500} spy={true} exact='true'  onClick={toggle}>Galeri</SidebarLink>
                    </SidebarMenu>
                    <SideBtnWrap>
                        <SidebarBtn to="/register">Masuk</SidebarBtn>
