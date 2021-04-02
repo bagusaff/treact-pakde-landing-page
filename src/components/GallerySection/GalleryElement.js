@@ -95,15 +95,17 @@ export const ImageCaption = styled.div`
         position:absolute; 
         opacity:0; 
         border-radius:10px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
         transition:all 300ms ease-in-out;
         -webkit-transition:all 300ms ease-in-out;
         -moz-transition:all 300ms ease-in-out;
         -o-transition:all 300ms ease-in-out;
         -ms-transition:all 300ms ease-in-out;
         h1{
-            padding:45px 0px 5px 0px;
             text-align:center;
-            margin-left:-15px;
             text-transform:uppercase;
             font-size:1rem;
             color:#FFA833;

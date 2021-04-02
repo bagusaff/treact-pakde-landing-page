@@ -58,18 +58,19 @@ export const TextWrapper = styled.div`
     padding-left:10px;
     h4{
         font-weight:600;
-        font-size:0.6rem;
+        font-size:0.8rem;
         color:#000;
     }
     h5{
         font-weight:400;
         color:#000;
-        font-size:0.6rem;
+        font-size:0.8rem;
     }
     p{
         font-weight:400;
-        font-size:0.6rem;
+        font-size:0.7rem;
         color:#959595;
+        margin-top:0.5rem;
     }
     strong{
         font-weight:600;

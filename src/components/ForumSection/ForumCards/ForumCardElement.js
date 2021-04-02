@@ -34,6 +34,16 @@ export const Avatar = styled.img`
 export const Bio = styled.div`
     display:flex;
     flex-direction:column;
+    h4{
+        font-weight:500;
+        font-size:0.9rem;
+        color:#000;
+    }
+    h5{
+        font-weight:600;
+        font-size:0.7rem;
+        color:#959595;
+    }
 `
 export const TimeStamp = styled.div`
     margin-top:auto;
@@ -58,6 +68,7 @@ export const Content = styled.div`
         font-size:1rem;
     }
     p{
+        margin:1rem 0;
         font-weight:400;
         font-size:0.7rem;
     }
@@ -112,14 +123,5 @@ export const CommentLink = styled(Link)`
 export const UserLink = styled(Link)`
 
     text-decoration:none;
-    h4{
-        font-weight:500;
-        font-size:0.9rem;
-        color:#000;
-    }
-    h5{
-        font-weight:600;
-        font-size:0.7rem;
-        color:#959595;
-    }
+    
 `

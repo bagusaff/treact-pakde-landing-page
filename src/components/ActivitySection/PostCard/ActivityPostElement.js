@@ -6,6 +6,7 @@ export const ActivityPostContainer = styled.div`
     max-width:1140px;
     width:100%;
     padding:10px 0;
+    margin-top:1rem;
 `
 
 export const ActivityThumbnail = styled.img`
@@ -31,7 +32,8 @@ export const PostTitle = styled.h2`
     font-weight: 500;
     font-size: 1.4rem;
     color: #000000;
-    margin-bottom:5px;
+    margin:10px 0;
+
 `
 
 export const PostDate = styled.h3`

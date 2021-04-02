@@ -1,8 +1,24 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { CardContainer, Header, Wrapper, Button, ButtonWrapper } from './SiderCardElement'
 
 import SiderPost from './SiderPost'
 const SiderCard = () => {
+    
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(false)
+    const fetchURL = "http://104.248.157.32"
+
+    useEffect(()=>{
+        setLoading(true)
+        fetch(`${fetchURL}/api/proposal`)
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json)
+            setData(json)
+            setLoading(false)
+        });        
+    },[])
+
     return (
         <>
             <CardContainer>
@@ -10,10 +26,11 @@ const SiderCard = () => {
                     <Header>
                         <h3>Proposal Masyarakat</h3>
                     </Header>
-                    <SiderPost />
-                    <SiderPost />
+                    {data.map((item)=>(
+                    <SiderPost title={item.title} author={item.created_by} date_post={item.created_at} />
+                    ))}
                     <ButtonWrapper>
-                        <Button to="/">
+                        <Button to="/guest/proposal">
                             Ajukan Proposalmu
                         </Button>
                     </ButtonWrapper>

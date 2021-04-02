@@ -1,13 +1,30 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import styled from 'styled-components'
 import ForumCard from './ForumCard'
 
 const ForumCardList = () => {
+    
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(false)
+    const fetchURL = "http://104.248.157.32"
+
+    useEffect(()=>{
+        setLoading(true)
+        fetch(`${fetchURL}/api/forum`)
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json)
+            setData(json)
+            setLoading(false)
+        });        
+    },[])
+
     return (
         <>
             <ForumCardListContainer>
-                <ForumCard />
-                <ForumCard />
+            {data.map((item)=>(
+                <ForumCard idx={item.idx} date_post={item.created_at} content={item.content} author={item.created_by} job={item.job} comment={item.comment} url={item.url} title={item.title}/>
+            ))}
             </ForumCardListContainer>   
         </>
     )

@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import {Link as LinkScroll} from 'react-scroll'
 
 export const FooterContainer = styled.footer`
-    /* padding-top:117px; */
     background-color: #963434;  
 `
 
@@ -12,21 +11,23 @@ export const FooterWrap = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    max-width:1140px;
+    /* max-width:1140px; */
     margin:0 auto;
 `
 
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled(LinkScroll)`
     color: #fff;
     text-decoration:none;
     margin-bottom:1rem;
     font-size:14px;
     justify-content:center;
+    cursor: pointer;
     font-weight:400;
+    text-align:center;
     &:hover{
         color:#FFA833;
-        transition:0.3s ease-out
+        transition:0.3s ease-out;
     }
 `
 export const WebsiteRights = styled.small`

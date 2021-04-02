@@ -16,7 +16,7 @@ const Sidebar = ({isOpen,toggle}) => {
                        <SidebarLink to="gallery" smooth={true} duration={500} spy={true} exact='true'  onClick={toggle}>Galeri</SidebarLink>
                    </SidebarMenu>
                    <SideBtnWrap>
-                       <SidebarBtn to="/register">Masuk</SidebarBtn>
+                       <SidebarBtn to="/login">Masuk</SidebarBtn>
                    </SideBtnWrap>
                </SidebarWrapper>
             </SidebarContainer>

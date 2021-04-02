@@ -27,8 +27,8 @@ const HeroSection = () => {
                                 <p>Wakil Ketua Komisi B DPRD Provinsi DIY</p>
                                 <br/>
                                 <BtnWrapper>
-                                    <NavBtnLink to="/">Forum Aspirasi Rakyat</NavBtnLink>
-                                    <NavBtnLink to="/">Ajukan Proposal</NavBtnLink>
+                                    <NavBtnLink to="/guest/forum">Forum Aspirasi Rakyat</NavBtnLink>
+                                    <NavBtnLink to="/guest/proposal">Ajukan Proposal</NavBtnLink>
                                 </BtnWrapper>
                             </Right>
                         </Col>

@@ -1,19 +1,36 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import { ActivityContainer, ActivityLink, ActivityTitle, Header, InnerWrapper, Wrapper } from './ActivityElement'
 import ActivityPost from './PostCard/ActivityPost'
 
 const ActivitySection = () => {
+
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(false)
+    const fetchURL = "http://104.248.157.32"
+
+    useEffect(()=>{
+        setLoading(true)
+        fetch(`${fetchURL}/api/article`)
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json)
+            setData(json)
+            setLoading(false)
+        });        
+    },[])
+
     return (
         <>
             <ActivityContainer id="activity">
                 <Wrapper>
                     <InnerWrapper>
                         <Header>
-                            <ActivityTitle to="/">Kegiatan Pakdhe</ActivityTitle>
-                            <ActivityLink to="/">Lihat Semua Kegiatan</ActivityLink>
+                            <ActivityTitle to="/activity">Kegiatan Pakdhe</ActivityTitle>
+                            <ActivityLink to="/activity">Lihat Semua Kegiatan</ActivityLink>
                         </Header>
-                        <ActivityPost />
-                        <ActivityPost />
+                        {data.map((item)=>(
+                            <ActivityPost thumbnail={item.image[0]} title={item.title} description={item.content} date_post={item.created_at} url={item.slug} />
+                        ))}
                     </InnerWrapper>
                 </Wrapper>
             </ActivityContainer>
