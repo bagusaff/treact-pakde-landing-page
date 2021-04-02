@@ -4,7 +4,7 @@ import { AboutContainer, Left, Wrapper,BtnWrapper,NavBtnLink, Right, Img, InnerW
 import SocialButton from './SocialButton'
 
 import bg from '../../images/background-about.png'
-import img from '../../images/homepict2.png'
+import img from '../../images/homepict5.png'
 import BadgeBanner from '../FloatingBanner/BadgeBanner'
 
 const AboutSection = () => {
@@ -21,7 +21,7 @@ const AboutSection = () => {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem neque, lacus magna lacus id nec, ullamcorper pellentesque malesuada. Semper non consequat dui a est. Proin dictum scelerisque accumsan, eu, elementum sed ornare. At et cursus pretium aliquet.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem neque, lacus magna lacus id nec, ullamcorper pellentesque malesuada. </p>
                                     <BtnWrapper>
-                                        <NavBtnLink to ="/guest/forum">Sampaikan Aspirasimu ke Pakdhe</NavBtnLink>
+                                        <NavBtnLink href="/guest/forum">Sampaikan Aspirasimu ke Pakdhe</NavBtnLink>
                                     </BtnWrapper>
                                     <h2>Yuk intip aktifitas pak Dwi Wayu</h2>
                                     <br/>

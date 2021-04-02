@@ -2,22 +2,21 @@ import React,{useEffect,useState} from 'react'
 import { GalleryContainer, Wrapper,InnerWrapper,Header, GalleryTitle,GalleryLink, GalleryImage, ImageWrapper, ImageCaption } from './GalleryElement'
 import {Container,Row,Col,Hidden} from 'react-grid-system'
 
-import image from '../../images/Thumbnail.png'
 import AskBanner from '../FloatingBanner/AskBanner'
 
 const GallerySection = () => {
     
     const [data, setData] = useState([])
-    const [loading, setLoading] = useState(false)
+    // const [loading, setLoading] = useState(false)
     const fetchURL = "http://104.248.157.32"
 
     useEffect(()=>{
-        setLoading(true)
+        // setLoading(true)
         fetch(`${fetchURL}/api/gallery`)
         .then((response) => response.json())
         .then((json) => {
             setData(json)
-            setLoading(false)
+            // setLoading(false)
         });        
     },[])
 
@@ -30,15 +29,15 @@ const GallerySection = () => {
                             <Col>
                                 <InnerWrapper>
                                     <Header>
-                                        <GalleryTitle to="/gallery">Galeri Pakdhe</GalleryTitle>
-                                        <Hidden sm xs><GalleryLink to="/gallery">Lihat semua galeri</GalleryLink></Hidden>
+                                        <GalleryTitle href="/gallery">Galeri Pakdhe</GalleryTitle>
+                                        <Hidden sm xs><GalleryLink href="/gallery">Lihat semua galeri</GalleryLink></Hidden>
                                     </Header>
                                 </InnerWrapper>
                             </Col>
                         </Row>
                         <Row>
-                            {data.map((item)=>(
-                                <Col xl={4} lg={4} md={4} sm={12} xs={12}>
+                            {data.map((item,index)=>(
+                                <Col xl={4} lg={4} md={4} sm={12} xs={12} key={index}>
                                     <ImageWrapper>
                                         <GalleryImage src={item.path}/>
                                         <ImageCaption>

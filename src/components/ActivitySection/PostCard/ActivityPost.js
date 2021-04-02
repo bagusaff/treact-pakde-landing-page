@@ -2,7 +2,6 @@ import React from 'react'
 import {Container,Row,Col} from 'react-grid-system'
 import { ActivityPostContainer, ActivityPostLink, ActivityThumbnail, PostBody, PostContainer, PostDate, PostTitle } from './ActivityPostElement'
 
-import image from '../../../images/Thumbnail.png'
 const ActivityPost = ({thumbnail,title,date_post,description,url}) => {
     return (
         <>
@@ -15,10 +14,10 @@ const ActivityPost = ({thumbnail,title,date_post,description,url}) => {
                 <Col xl={9} md={9} xs={12} sm={12}>
                     <Row>
                         <PostContainer>
-                            <PostTitle>{title}</PostTitle>
+                            <PostTitle href={url}>{title}</PostTitle>
                             <PostDate>Dipublikasikan oleh Admin, {date_post}</PostDate>
                             <PostBody>{description}</PostBody>
-                            <ActivityPostLink to={url}>Baca Selengkapnya</ActivityPostLink>
+                            <ActivityPostLink href={url}>Baca Selengkapnya</ActivityPostLink>
                         </PostContainer>
                     </Row>
                 </Col>

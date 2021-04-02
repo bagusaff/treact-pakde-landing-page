@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 export const GalleryContainer = styled.div`
     width:100%;
     background-color:#fff;
@@ -26,7 +25,7 @@ export const Header = styled.div`
     align-items:center;
 `
 
-export const GalleryTitle = styled(Link)`
+export const GalleryTitle = styled.a`
     font-weight:600;
     font-size:2.2rem;
     margin-bottom:30px;
@@ -48,7 +47,7 @@ export const GalleryTitle = styled(Link)`
 `
 
 
-export const GalleryLink = styled(Link)`
+export const GalleryLink = styled.a`
     font-weight: 500;
     font-size: 1rem;
     line-height: 22px;

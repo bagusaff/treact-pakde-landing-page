@@ -14,7 +14,7 @@ const ForumCard = ({idx,author,date_post,title,content,url,job,comment}) => {
                             <Avatar src={avatar}/>
                             <Bio>
                                 <h4>{author}</h4>
-                                <h5>Wiraswasta</h5>
+                                <h5>{job}</h5>
                             </Bio>
                         </UserWrapper>
                         <TimeStamp>
@@ -26,10 +26,10 @@ const ForumCard = ({idx,author,date_post,title,content,url,job,comment}) => {
                         <p>{content}</p>
                     </Content>
                     <Footer>
-                        <CommentLink to={url}>
+                        <CommentLink href={url}>
                             <FaRegCommentDots/><span>{comment} <Hidden xs sm>Komentar</Hidden></span>
                         </CommentLink>
-                        <ForumLink to={url}>Lihat Detail Diskusi</ForumLink>
+                        <ForumLink href={url}>Lihat Detail Diskusi</ForumLink>
                     </Footer>
                 </Wrapper>
             </CardContainer>

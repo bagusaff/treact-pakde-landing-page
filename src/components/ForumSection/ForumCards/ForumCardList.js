@@ -5,24 +5,24 @@ import ForumCard from './ForumCard'
 const ForumCardList = () => {
     
     const [data, setData] = useState([])
-    const [loading, setLoading] = useState(false)
+    // const [loading, setLoading] = useState(false)
     const fetchURL = "http://104.248.157.32"
 
     useEffect(()=>{
-        setLoading(true)
+        // setLoading(true)
         fetch(`${fetchURL}/api/forum`)
         .then((response) => response.json())
         .then((json) => {
             setData(json)
-            setLoading(false)
+            // setLoading(false)
         });        
     },[])
 
     return (
         <>
             <ForumCardListContainer>
-            {data.map((item)=>(
-                <ForumCard idx={item.idx} date_post={item.created_at} content={item.content} author={item.created_by} job={item.job} comment={item.comment} url={item.url} title={item.title}/>
+            {data.map((item,index)=>(
+                <ForumCard key={index} idx={item.idx} date_post={item.created_at} content={item.content} author={item.created_by} job={item.job} comment={item.comment} url={item.url} title={item.title}/>
             ))}
             </ForumCardListContainer>   
         </>

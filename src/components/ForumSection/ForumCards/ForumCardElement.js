@@ -1,6 +1,4 @@
 import styled from'styled-components'
-import {Link} from 'react-router-dom'
-
 export const CardContainer = styled.div`
     width:auto;
     height:auto;
@@ -84,7 +82,7 @@ export const Footer = styled.div`
     grid-gap:20px;
 `
 
-export const ForumLink = styled(Link)`
+export const ForumLink = styled.a`
     font-weight: 500;
     color: #0A93E2;
     text-decoration:none;
@@ -96,7 +94,7 @@ export const ForumLink = styled(Link)`
     }
 `
 
-export const CommentLink = styled(Link)`
+export const CommentLink = styled.a`
     color:#000;
     text-decoration:none;
     white-space:nowrap;
@@ -118,10 +116,4 @@ export const CommentLink = styled(Link)`
         transform: scale(1.1);
         }
     } */
-`
-
-export const UserLink = styled(Link)`
-
-    text-decoration:none;
-    
 `

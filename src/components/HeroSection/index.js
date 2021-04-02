@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'react-grid-system'
 import { BtnWrapper, HeroContainer, Img, Left, NavBtnLink, Right, Wrapper } from './HeroElement'
 
 import bg from '../../images/background-hero.png'
-import image from '../../images/homepict1.png'
+import image from '../../images/homepict3.png'
 
 const HeroSection = () => {
     return (
@@ -27,8 +27,8 @@ const HeroSection = () => {
                                 <p>Wakil Ketua Komisi B DPRD Provinsi DIY</p>
                                 <br/>
                                 <BtnWrapper>
-                                    <NavBtnLink to="/guest/forum">Forum Aspirasi Rakyat</NavBtnLink>
-                                    <NavBtnLink to="/guest/proposal">Ajukan Proposal</NavBtnLink>
+                                    <NavBtnLink href="/guest/forum">Forum Aspirasi Rakyat</NavBtnLink>
+                                    <NavBtnLink href="/guest/proposal">Ajukan Proposal</NavBtnLink>
                                 </BtnWrapper>
                             </Right>
                         </Col>

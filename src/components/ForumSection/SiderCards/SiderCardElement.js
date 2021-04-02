@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 
 export const CardContainer = styled.div`
     width:auto;
@@ -87,28 +86,28 @@ export const ButtonWrapper = styled.div`
     width:100%;
     display:flex;
     justify-content:center;
-`
 
-export const Button = styled(Link)`
-    border-radius:10px;
-    background:#FFA833;
-    color:#fff;
-    font-weight:600;
-    text-decoration:none;
-    white-space:nowrap;
-    padding:7px 0px;
-    margin:10px 0;
-    outline:none;
-    font-size:0.8rem;
-    width:80%;
-    text-align:center;
-    border:none;
-    cursor: pointer;
-    transition:all 0.1s ease-in-out;
-    &:hover{
-        transform: scale(1.02);
-    }
-    @media screen and (max-width:768px){
-        margin-bottom:20px;
+    a{
+        border-radius:10px;
+        background:#FFA833;
+        color:#fff;
+        font-weight:600;
+        text-decoration:none;
+        white-space:nowrap;
+        padding:7px 0px;
+        margin:10px 0;
+        outline:none;
+        font-size:0.8rem;
+        width:80%;
+        text-align:center;
+        border:none;
+        cursor: pointer;
+        transition:all 0.1s ease-in-out;
+        &:hover{
+            transform: scale(1.02);
+        }
+        @media screen and (max-width:768px){
+            margin-bottom:20px;
+        }
     }
 `

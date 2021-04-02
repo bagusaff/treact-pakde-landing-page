@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
-
 
 export const ActivityPostContainer = styled.div`
     max-width:1140px;
@@ -28,12 +26,12 @@ export const PostContainer = styled.div`
     margin-left:10px;
 `
 
-export const PostTitle = styled.h2`
+export const PostTitle = styled.a`
     font-weight: 500;
     font-size: 1.4rem;
     color: #000000;
     margin:10px 0;
-
+    text-decoration:none;
 `
 
 export const PostDate = styled.h3`
@@ -50,7 +48,7 @@ export const PostBody = styled.p`
     margin-bottom:5px;
 `
 
-export const ActivityPostLink = styled(Link)`
+export const ActivityPostLink = styled.a`
     font-weight: 500;
     font-size: 0.8rem;
     line-height: 22px;

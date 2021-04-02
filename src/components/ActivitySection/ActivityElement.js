@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 export const ActivityContainer = styled.div`
     width:100%;
     background-color:#fff;
@@ -26,7 +25,7 @@ export const Header = styled.div`
     align-items:center;
 `
 
-export const ActivityTitle = styled(Link)`
+export const ActivityTitle = styled.a`
     font-weight:600;
     font-size:2.2rem;
     margin-bottom:30px;
@@ -46,7 +45,7 @@ export const ActivityTitle = styled(Link)`
     }
 `
 
-export const ActivityLink = styled(Link)`
+export const ActivityLink = styled.a`
     font-weight: 500;
     font-size: 1rem;
     line-height: 22px;

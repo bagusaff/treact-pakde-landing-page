@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from'react-router-dom'
 const AskBanner = () => {
     return (
         <>
@@ -9,7 +8,7 @@ const AskBanner = () => {
                     <h3>Punya pertanyaan yang ingin disampaikan kepada Pakdhe?</h3>
                     <h3>Dengan senang hati bisa menerimanya</h3>
                     <ButtonWrapper>
-                        <Button to="/ask-us">Tanyakan pada Pakdhe</Button>
+                        <Button href="/contact">Tanyakan pada Pakdhe</Button>
                     </ButtonWrapper>
                 </Label>
             </LabelWrapper>
@@ -51,7 +50,7 @@ const ButtonWrapper = styled.div`
     margin-top:10px;
 `
 
-const Button = styled(Link)`
+const Button = styled.a`
     border-radius:10px;
     background:#FFA833;
     color:#fff;

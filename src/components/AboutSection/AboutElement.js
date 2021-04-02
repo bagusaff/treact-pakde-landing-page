@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
-
 export const AboutContainer = styled.div`
     width:100%;
     background-image:url(${({bg})=> bg});
@@ -106,7 +104,7 @@ export const BtnWrapper = styled.div`
     margin-bottom:10px;
 `
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.a`
     border-radius:50px;
     background:#fff;
     color:#000;
@@ -134,7 +132,7 @@ export const NavBtnLink = styled(Link)`
     }
 `
 
-export const SocialBtnLink = styled(Link)`
+export const SocialBtnLink = styled.a`
     border-radius:50px;
     margin-right:5px;
     background:${props=>props.background || "#000"};
@@ -163,7 +161,7 @@ export const SocialBtnLink = styled(Link)`
 `
 
 export const Img = styled.img`
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   @media screen and (max-width:768px){
     max-width:50%;

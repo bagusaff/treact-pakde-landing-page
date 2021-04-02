@@ -93,25 +93,25 @@ export const NavBtn = styled.nav`
     display:flex;
     align-items:center;
 
+    a{
+        border-radius:50px;
+        background:#FFA833;
+        color:#fff;
+        text-decoration:none;
+        white-space:nowrap;
+        padding:10px 22px;
+        outline:none;
+        border:none;
+        cursor: pointer;
+        transition:all 0.2s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            font-weight:600;
+        }
+
+    }
     @media screen and (max-width:768px){
         display:none;
-    }
-`
-
-export const NavBtnLink = styled(Link)`
-    border-radius:50px;
-    background:#FFA833;
-    color:#fff;
-    text-decoration:none;
-    white-space:nowrap;
-    padding:10px 22px;
-    outline:none;
-    border:none;
-    cursor: pointer;
-    transition:all 0.2s ease-in-out;
-
-    &:hover{
-        transform: scale(1.1);
-        font-weight:600;
     }
 `

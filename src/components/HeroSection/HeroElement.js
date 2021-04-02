@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 export const HeroContainer = styled.div`
     width:100%;
     background-image:url(${({bg})=> bg});
@@ -86,7 +85,7 @@ export const BtnWrapper = styled.div`
     }
 `
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.a`
     border-radius:50px;
     background:#FFA833;
     color:#fff;
