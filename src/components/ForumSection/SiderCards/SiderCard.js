@@ -13,7 +13,6 @@ const SiderCard = () => {
         fetch(`${fetchURL}/api/proposal`)
         .then((response) => response.json())
         .then((json) => {
-            console.log(json)
             setData(json)
             setLoading(false)
         });        

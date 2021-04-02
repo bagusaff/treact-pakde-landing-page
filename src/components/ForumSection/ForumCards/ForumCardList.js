@@ -13,7 +13,6 @@ const ForumCardList = () => {
         fetch(`${fetchURL}/api/forum`)
         .then((response) => response.json())
         .then((json) => {
-            console.log(json)
             setData(json)
             setLoading(false)
         });        

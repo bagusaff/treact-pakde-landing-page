@@ -16,7 +16,6 @@ const GallerySection = () => {
         fetch(`${fetchURL}/api/gallery`)
         .then((response) => response.json())
         .then((json) => {
-            console.log(json)
             setData(json)
             setLoading(false)
         });        

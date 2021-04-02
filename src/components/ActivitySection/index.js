@@ -13,7 +13,6 @@ const ActivitySection = () => {
         fetch(`${fetchURL}/api/article`)
         .then((response) => response.json())
         .then((json) => {
-            console.log(json)
             setData(json)
             setLoading(false)
         });        
