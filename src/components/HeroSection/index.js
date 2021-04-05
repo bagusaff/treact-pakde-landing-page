@@ -1,9 +1,13 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-grid-system'
 import { BtnWrapper, HeroContainer, Img, Left, NavBtnLink, Right, Wrapper } from './HeroElement'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 import bg from '../../images/background-hero.png'
-import image from '../../images/homepict3.png'
+import image1 from '../../images/homepict1.png'
+import image2 from '../../images/homepict2.png'
+import image3 from '../../images/homepict3.png'
 
 const HeroSection = () => {
     return (
@@ -14,7 +18,17 @@ const HeroSection = () => {
                     <Row>
                         <Col xl={4} md={4} xs={12} sm={12}>
                             <Left>
-                                <Img src={image} alt="pakdhe"/> 
+                                <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={false} showStatus={false}>
+                                    <div>
+                                        <Img src={image1}/>
+                                    </div>
+                                    <div>
+                                        <Img src={image2}/>
+                                    </div>
+                                    <div>
+                                        <Img src={image3}/>
+                                    </div>
+                                </Carousel>
                             </Left>
                         </Col>
                         <Col xl={8} md={8} xs={12} sm={12}>

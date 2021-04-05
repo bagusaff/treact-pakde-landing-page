@@ -69,7 +69,7 @@ export const Img = styled.img`
   max-width: 100%;
   height: auto;
   @media screen and (max-width:767px){
-    max-width:50%;
+    max-width:70%;
     margin-left:auto;
     margin-right:auto;
     display:block;

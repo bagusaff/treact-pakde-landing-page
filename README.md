@@ -1,13 +1,16 @@
 ### Pakdhe Landing Page
 Created using react 
 
--styled-component
+-  styled-component
 
--React-Router-Dom
+-  react-router-dom
 
--React-icons
+-  react-icons
 
-[-] Fully Responsive
+-  react-responsive-carousel
+
+[x] Fully Responsive
+
 ## Home Page
 [x] Navbar 29-03-2021
 
@@ -41,9 +44,7 @@ TBA
 ## Notes
 [ ] fix background bug
 
-[ ] change avatar
-
-[nope] Carrer Banner & Question Banner use react slik for mobile phone
+[x] change avatar
 
 # 30 - 3 - 2021 
 - change container size from 100vh to 800px
@@ -56,3 +57,4 @@ TBA
 
 # 5 - 4 - 2021
 - fixing banner size for mobile phone
+- carousel for hero section

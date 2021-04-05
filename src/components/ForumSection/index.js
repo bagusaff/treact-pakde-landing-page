@@ -1,6 +1,6 @@
 import React from 'react'
 import { ForumContainer,Wrapper,Left,Right } from './ForumElement'
-import {Container, Row, Col, Hidden} from 'react-grid-system'
+import {Container, Row, Col} from 'react-grid-system'
 
 import bg from '../../images/background-forum.png'
 import ForumCardList from './ForumCards/ForumCardList'
