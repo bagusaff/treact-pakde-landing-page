@@ -14,6 +14,7 @@ export const AboutContainer = styled.div`
 export const Wrapper = styled.div`
     max-width:1140px;
     margin:auto;
+    display:flex;
     padding:5rem 0rem;
 `
 
@@ -49,6 +50,7 @@ export const Left = styled.div`
     @media screen and (max-width:768px){
         align-items: center;
         padding-top:20px;
+        order:2;
         h1,strong{
             font-size:1.3rem;
         }
@@ -88,6 +90,7 @@ export const Right= styled.div`
     }
 
     @media screen and (max-width:768px){
+        order:1;
         h2{
             font-size:1rem;
         }

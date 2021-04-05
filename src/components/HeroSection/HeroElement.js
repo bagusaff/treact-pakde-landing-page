@@ -3,11 +3,11 @@ export const HeroContainer = styled.div`
     width:100%;
     background-image:url(${({bg})=> bg});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 600px;
     background-position: center;
-    /* @media screen and (max-width:768px){
-        margin-bottom:50px;
-    } */
+    @media screen and (max-width:768px){
+        background-size: cover;
+    }
 `
 
 export const Wrapper = styled.div`

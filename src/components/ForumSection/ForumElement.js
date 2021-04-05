@@ -4,9 +4,12 @@ export const ForumContainer = styled.div`
     width:100%;
     background-image:url(${({bg})=> bg});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 800px;
     background-position: center;
     position:relative;
+    @media screen and (max-width:768px){
+        background-size: cover;
+    }
 ` 
 
 export const Wrapper = styled.div`

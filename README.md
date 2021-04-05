@@ -58,3 +58,4 @@ TBA
 # 5 - 4 - 2021
 - fixing banner size for mobile phone
 - carousel for hero section
+- fix background bug
