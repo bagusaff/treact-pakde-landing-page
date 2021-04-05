@@ -53,3 +53,6 @@ TBA
 - navbar scoll to section
 - floating button to go to top
 - mobile phone version now more stable
+
+# 5 - 4 - 2021
+- fixing banner size for mobile phone

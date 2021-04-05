@@ -38,12 +38,15 @@ const Label = styled.div`
     width: auto;
     height: auto;
     bottom:-50px;
-    padding:10px 20px;;
+    padding:10px 20px;
     position:absolute;
     background: #fff;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     z-index:1;
+    @media screen and (max-width:500px){
+        padding:5px 10px;
+    }
 `
 
 const InnerWrapper = styled.div`
@@ -69,10 +72,20 @@ const Title = styled.h1`
     font-size:1rem;
     text-align:center;
     margin-bottom:10px;
+    @media screen and (max-width:320px){
+        font-size:0.8rem;
+    }
 `
 
 const Body = styled.p`
     font-weight:400;
     font-size:0.7rem;
     text-align:center;
+
+    @media screen and (max-width:768px){
+        font-size:0.6rem;
+    }
+    @media screen and (max-width:320px){
+        font-size:0.5rem;
+    }
 `

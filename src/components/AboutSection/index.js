@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Row, Col, Hidden} from 'react-grid-system'
+import {Container, Row, Col} from 'react-grid-system'
 import { AboutContainer, Left, Wrapper,BtnWrapper,NavBtnLink, Right, Img, InnerWrapper } from './AboutElement'
 import SocialButton from './SocialButton'
 
@@ -41,9 +41,7 @@ const AboutSection = () => {
                         </Row>
                     </Container>
                 </Wrapper>
-                <Hidden xs sm>
-                    <BadgeBanner />
-                </Hidden>
+                <BadgeBanner />
             </AboutContainer>
         </>
     )

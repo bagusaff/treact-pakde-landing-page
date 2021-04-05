@@ -35,7 +35,7 @@ const ForumSection = () => {
                         </Row>
                     </Container>
                 </Wrapper>
-                <Hidden sm xs><ExperienceBanner/></Hidden>
+                <ExperienceBanner/>
             </ForumContainer>
         </>
     )
