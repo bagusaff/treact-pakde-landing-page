@@ -72,7 +72,7 @@ const Title = styled.h1`
     font-size:1rem;
     text-align:center;
     margin-bottom:10px;
-    @media screen and (max-width:320px){
+    @media screen and (max-width:384px){
         font-size:0.8rem;
     }
 `
@@ -85,7 +85,7 @@ const Body = styled.p`
     @media screen and (max-width:768px){
         font-size:0.6rem;
     }
-    @media screen and (max-width:320px){
+    @media screen and (max-width:384px){
         font-size:0.5rem;
     }
 `
