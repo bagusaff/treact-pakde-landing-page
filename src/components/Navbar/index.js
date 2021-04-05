@@ -3,19 +3,24 @@ import {FaBars} from 'react-icons/fa'
 
 import { 
     MobileIcon, 
+    NavLogo,
     Nav, 
     NavbarContainer, 
     NavBtn, 
     NavItem, 
     NavLinks, 
-    NavMenu 
+    NavMenu ,
+    Img
 } from './NavbarElement'
+
+import navbarlogo from '../../images/output-onlinepngtools.png'
 
 const Navbar = ({toggle}) => {
     return (
         <>
         <Nav>
             <NavbarContainer>
+            <NavLogo to="/" onClick={toggle}><Img src={navbarlogo} style={{fill:'red'}}></Img></NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars fill='#fff'/>
                 </MobileIcon>

@@ -1,4 +1,4 @@
-### Pakdhe Landing Page
+### Pakdwek Landing Page
 Created using react 
 
 -  styled-component
@@ -42,9 +42,11 @@ TBA
 TBA
 
 ## Notes
-[ ] fix background bug
+[x] fix background bug
 
 [x] change avatar
+
+[ ] change hero transition style 
 
 # 30 - 3 - 2021 
 - change container size from 100vh to 800px
@@ -59,3 +61,6 @@ TBA
 - fixing banner size for mobile phone
 - carousel for hero section
 - fix background bug
+- resie hero image
+- add navbar logo
+- rename pakdhe-> pak dwek

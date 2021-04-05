@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
 
 export const Nav = styled.nav`
@@ -27,7 +26,12 @@ export const NavbarContainer = styled.div`
     max-width:1100px;
 `
 
-export const NavLogo = styled(Link)`
+export const Img = styled.img`
+  width: 12%;
+`;
+
+
+export const NavLogo = styled(LinkScroll)`
     /* color:${({scrollNav}) => (scrollNav ? '#fff' : '#183B56')}; */
     color:white;
     justify-self:flex-start;

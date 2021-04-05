@@ -68,6 +68,7 @@ export const Right = styled.div`
 export const Img = styled.img`
   max-width: 100%;
   height: auto;
+  max-height:500px;
   @media screen and (max-width:767px){
     max-width:70%;
     margin-left:auto;

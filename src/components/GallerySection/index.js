@@ -29,7 +29,7 @@ const GallerySection = () => {
                             <Col>
                                 <InnerWrapper>
                                     <Header>
-                                        <GalleryTitle href="/gallery">Galeri Pakdhe</GalleryTitle>
+                                        <GalleryTitle href="/gallery">Galeri Pak Dwek</GalleryTitle>
                                         <Hidden sm xs><GalleryLink href="/gallery">Lihat semua galeri</GalleryLink></Hidden>
                                     </Header>
                                 </InnerWrapper>

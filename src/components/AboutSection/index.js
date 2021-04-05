@@ -16,12 +16,12 @@ const AboutSection = () => {
                         <Row>
                             <Col xl={7} md={7} xs={12} sm={12}>
                                 <Left>
-                                    <h1>Mengenal Pakdhe</h1>
+                                    <h1>Mengenal Pak Dwek</h1>
                                     <br/>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem neque, lacus magna lacus id nec, ullamcorper pellentesque malesuada. Semper non consequat dui a est. Proin dictum scelerisque accumsan, eu, elementum sed ornare. At et cursus pretium aliquet.</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem neque, lacus magna lacus id nec, ullamcorper pellentesque malesuada. </p>
                                     <BtnWrapper>
-                                        <NavBtnLink href="/guest/forum">Sampaikan Aspirasimu ke Pakdhe</NavBtnLink>
+                                        <NavBtnLink href="/guest/forum">Sampaikan Aspirasimu ke Pak Dwek</NavBtnLink>
                                     </BtnWrapper>
                                     <h2>Yuk intip aktifitas pak Dwi Wayu</h2>
                                     <br/>

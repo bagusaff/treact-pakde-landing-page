@@ -5,10 +5,10 @@ const AskBanner = () => {
         <>
             <LabelWrapper>
                 <Label>
-                    <h3>Punya pertanyaan yang ingin disampaikan kepada Pakdhe?</h3>
+                    <h3>Punya pertanyaan yang ingin disampaikan kepada Pak Dwek?</h3>
                     <h3>Dengan senang hati bisa menerimanya</h3>
                     <ButtonWrapper>
-                        <Button href="/contact">Tanyakan pada Pakdhe</Button>
+                        <Button href="/contact">Tanyakan pada Pak Dwek</Button>
                     </ButtonWrapper>
                 </Label>
             </LabelWrapper>

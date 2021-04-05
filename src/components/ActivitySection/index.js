@@ -24,7 +24,7 @@ const ActivitySection = () => {
                 <Wrapper>
                     <InnerWrapper>
                         <Header>
-                            <ActivityTitle href="/activity">Kegiatan Pakdhe</ActivityTitle>
+                            <ActivityTitle href="/activity">Kegiatan Pak Dwek</ActivityTitle>
                             <ActivityLink href="/activity">Lihat Semua Kegiatan</ActivityLink>
                         </Header>
                         {data.map((item, index)=>(
