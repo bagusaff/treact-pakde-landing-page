@@ -64,3 +64,7 @@ TBA
 - resie hero image
 - add navbar logo
 - rename pakdhe-> pak dwek
+
+# 6 - 4 - 2021
+- navbar transparent when on top
+- change background hero 
