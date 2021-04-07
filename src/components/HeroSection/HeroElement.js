@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
     top:0;
     background-position: center;
     @media screen and (max-width:768px){
-        background-size: cover;
+    background-size: 100% 100%;
     }
 `
 
