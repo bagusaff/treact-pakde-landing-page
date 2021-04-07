@@ -1,13 +1,20 @@
 import styled from 'styled-components'
+import bg from '../../images/background-hero.png'
+import bgMobile from '../../images/background-hero-mobile.png'
+
 export const HeroContainer = styled.div`
     width:100%;
-    background-image:url(${({bg})=> bg});
+    background-image:url(${bg});
     background-repeat: no-repeat;
     background-size: 100% 650px;
     top:0;
     background-position: center;
     @media screen and (max-width:768px){
-    background-size: 100% 100%;
+    background-size: cover;
+    }
+    @media screen and (max-width:500px){
+    background-size:cover;
+    background-image:url(${bgMobile});
     }
 `
 

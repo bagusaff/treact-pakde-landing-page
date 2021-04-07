@@ -1,13 +1,13 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-grid-system'
 import { BtnWrapper, HeroContainer, Left, NavBtnLink, Right, Wrapper } from './HeroElement'
-import bg from '../../images/background-hero.png'
+// import bg from '../../images/background-hero.png'
 import HeroCarousel from './HeroCarousel';
 
 const HeroSection = () => {
     return (
         <>
-        <HeroContainer bg={bg}>
+        <HeroContainer>
             <Wrapper>
                 <Container fluid>
                     <Row>
